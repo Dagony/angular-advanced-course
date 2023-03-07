@@ -7,11 +7,16 @@
 }
 
 :host {
+  background: white;
   border: 1px solid lightgray;
   padding-bottom: 1px;
+  display: inline-block;
 }
 
 input {
   border: none;
   outline: none;
+  height: 100%;
+  margin: 1px 0;
+  box-sizing: border-box;
 }
