@@ -3,6 +3,12 @@
     "node_modules/codelyzer"
   ],
   "rules": {
+    "@angular-eslint/component-selector": {
+      "error": {
+        "style": "kebab-case",
+        "type": "element"
+      }
+    },
     "callable-types": true,
     "class-name": true,
     "comment-format": [
@@ -112,5 +118,13 @@
     "no-access-missing-member": true,
     "templates-use-public": true,
     "invoke-injectable": true
+  },
+  "schematics": {
+    "@schematics/angular:component": {
+      "prefix": ""
+    },
+    "@schematics/angular:directive": {
+      "prefix": ""
+    }
   }
 }
